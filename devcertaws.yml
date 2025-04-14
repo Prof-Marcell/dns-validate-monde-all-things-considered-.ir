@@ -1,5 +1,5 @@
   git innit
-git -link <sec> zip.file to repo [/storage/emulated/0/Aws/cybersecaws.yml.zip] <sec>
+git -link <sec> zip.file to repo [/storage/emulated/0/Aws/cybersecaws.yml.zip] </sec>
 git setup devcert.yml envro file 
  git build aws CI pipeline 
   git link aws CI pipeline to -devcertdotyml envr file
