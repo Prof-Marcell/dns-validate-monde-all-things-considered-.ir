@@ -1,5 +1,5 @@
 1.   git init 
-2.    git -link <sec> zip.file to repo [/storage/3.emulated/0/Aws/cybersecaws.yml.zip] </sec>
+2.    git code zip.file to repo [/storage/3.emulated/0/Aws/cybersecaws.yml.zip]
 4.   git setup devcert.yml envro file 
 5. git build aws CI pipeline 
 6.  git link aws CI pipeline to -devcertdotyml envr file
