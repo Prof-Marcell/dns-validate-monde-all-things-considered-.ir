@@ -1,8 +1,8 @@
-1. git init 
-2. git -link <sec> zip.file to repo [/storage/3.emulated/0/Aws/cybersecaws.yml.zip] </sec>
-4. git setup devcert.yml envro file 
+1.   git init 
+2.    git -link <sec> zip.file to repo [/storage/3.emulated/0/Aws/cybersecaws.yml.zip] </sec>
+4.   git setup devcert.yml envro file 
 5. git build aws CI pipeline 
-6. .git link aws CI pipeline to -devcertdotyml envr file
-7. git merge commits -[marcelmonde],[kenaimarcel] to repo -marcelmonde
-8. git deploy package -devcert.yml file using aws pipeline
+6.  git link aws CI pipeline to -devcertdotyml envr file
+7.    git merge commits [marcelmonde],[kenaimarcel] to repo -marcelmonde
+8.  git deploy package -devcert.yml file using aws pipeline
 9. git run= [command] -force push
