@@ -1,0 +1,7 @@
+  git innit
+git setup devcert.yml envro file
+ git build aws CI pipeline 
+  git link aws CI pipeline to -devcertdotyml envr file
+git merge commits -[marcelmonde],[kenaimarcel] to repo -marcelmonde
+  git deploy package -devcert.yml file using aws pipeline
+git run= [command] -force push
