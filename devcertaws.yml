@@ -1,8 +1,27 @@
-1.   git init 
-2.     git code zip.file to repo [/storage/emulated/0/Aws/cybersecaws.yml.zip]
-3.   git build a new devro file
-4. git setup devcert.yml envro file 
-5.   git build aws CI pipeline 
-6.    git link aws CI pipeline to -devcertdotyml envr file
-7.      git merge commits [marcelmonde],[kenaimarcel] to repo -marcelmonde
-8.   git deploy package -devcert.yml file using aws pipeline
+steps:
+  - step: git init
+    description: Initialize the Git repository.
+
+  - step: git add cybersecaws.yml.zip
+    description: Add the zip file to the repository from the specified path.
+
+  - step: git setup devcert.yml
+    description: Set up the environment configuration file named devcert.yml.
+
+  - step: git build aws-ci
+    description: Build the AWS CI pipeline.
+
+  - step: git link aws-ci to devcert.yml
+    description: Link the AWS CI pipeline to the devcert.yml environment file.
+
+  - step: git merge commits
+    branches: 
+      - marcelmonde
+      - kenaimarcel
+    description: Merge the specified branches into the repository.
+
+  - step: git deploy devcert.yml
+    description: Deploy the devcert.yml file using the AWS pipeline.
+
+  - step: git push --force
+    description: Force push the changes to the remote repository.
