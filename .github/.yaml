@@ -1,0 +1,31 @@
+name: Convert .docx to Kindle-compatible HTML
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow when changes are pushed to the main branch
+  workflow_dispatch: # Allow manual triggering of the workflow
+
+jobs:
+    - name: convert .html to DOCX
+      run: https://1drv.ms/w/c/544ad31e9a82496a/EZh-Qf_GzpBCqPcrpgYcAEABY9ZS8euOmTWUhbkMI37CdA
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install Pandoc
+      run: sudo apt-get update && sudo apt-get install -y pandoc
+
+    - name: Convert .docx to HTML
+      run: |
+        pandoc path/to/your-file.docx -o output.html --standalone
+        mkdir -p public
+        mv output.html public/index.html
+
+    - name: Deploy HTML to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: public
