@@ -3,8 +3,7 @@ steps:
     description: Initialize the Git repository.
 
   - step: git add cybersecaws.yml.zip
-    description: Add the zip file to the repository from the specified path.
-
+    description: -Add [path/to/cybersecaws.yml.zip]
   - step: git setup devcert.yml
     description: Set up the environment configuration file named devcert.yml.
 
