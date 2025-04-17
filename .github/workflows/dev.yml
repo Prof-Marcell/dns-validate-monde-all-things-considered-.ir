@@ -1,27 +1,41 @@
-steps:
-  - step: git init
-    description: Initialize the Git repository.
+name: Deploy AWS Pipeline
 
-  - step: git add cybersecaws.yml.zip
-    description: Add the zip file to the repository from the specified path.
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
-  - step: git setup devcert.yml
-    description: Set up the environment configuration file named devcert.yml.
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-  - step: git build aws-ci
-    description: Build the AWS CI pipeline.
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-  - step: git link aws-ci to devcert.yml
-    description: Link the AWS CI pipeline to the devcert.yml environment file.
+    - name: Initialize Git repository
+      run: git init
 
-  - step: git merge commits
-    branches: 
-      - marcelmonde
-      - kenaimarcel
-    description: Merge the specified branches into the repository.
+    - name: Add zip file to repository
+      run: git add path/to/cybersecaws.yml.zip
 
-  - step: git deploy devcert.yml
-    description: Deploy the devcert.yml file using the AWS pipeline.
+    - name: Set up environment configuration
+      run: cp devcert.yml path/to/env
 
-  - step: git push --force
-    description: Force push the changes to the remote repository.
+    - name: Build AWS CI pipeline
+      run: echo "Building AWS CI pipeline (add actual commands here)"
+
+    - name: Link AWS CI to environment file
+      run: echo "Linking AWS CI pipeline to devcert.yml (add actual commands here)"
+
+    - name: Merge branches
+      run: |
+        git checkout main
+        git merge marcelmonde kenaimarcel
+
+    - name: Deploy environment file
+      run: echo "Deploying devcert.yml file using AWS pipeline (add actual commands here)"
+
+    - name: Force push changes
+      run: git push origin main --force
