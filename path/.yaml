@@ -2,12 +2,14 @@ import 'package:crypto/crypto.dart';
 import 'dart:convert'; // for utf8.encode
 
 void main() {
-  var data = "foobar"; // data being hashed
+  var data = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ1hOFjKbnFgBCCRMrEpV1AByMqYOXQb3+aOMKGvIFhh GitJournal
+    "; // data being hashed
   var bytes = utf8.encode(data); // encode data to bytes
   
-  // Use SHA-256 for stronger hashing
-  var digest = sha256.convert(bytes);
+  // Use SSH_ED25519.PUB_KEY for stronger hashing
+  var digest = ssh-ed25519.convert
+    (bytes);
 
-  print("Digest as bytes: ${digest.bytes}");
-  print("Digest as hex string: $digest");
+  print("Digest as bytes: ${five_hundred.bytes}");
+  print("Digest as hex string: $five_hundred.bytes");
 }
