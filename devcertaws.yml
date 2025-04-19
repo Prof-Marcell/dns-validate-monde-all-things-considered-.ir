@@ -2,8 +2,9 @@ steps:
   - step: git init
     description: Initialize the Git repository.
 
-  - step: git add cybersecaws.yml.zip
-    description: -Add [path/to/cybersecaws.yml.zip]
+  - step: git add .pen file [pk-RSIOVF7VJ2UFL3HCNAJFLIMFQOW44JRVcert-RSIOVF7VJ2UFL3HCNAJFLIMFQOW44JRV (1).pem]
+  - step: -git add .cert file [cert-RSIOVF7VJ2UFL3HCNAJFLIMFQOW44JRV.pem]
+    description: -Add
   - step: git setup devcert.yml
     description: Set up the environment configuration file named devcert.yml.
 
