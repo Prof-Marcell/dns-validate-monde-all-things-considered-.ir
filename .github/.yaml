@@ -27,7 +27,8 @@ jobs:
     - name: Deploy HTML to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ1hOFjKbnFgBCCRMrEpV1AByMqYOXQb3+aOMKGvIFhh GitJournal
+     }}
         publish_dir: public
 
 workflow_dispatch
