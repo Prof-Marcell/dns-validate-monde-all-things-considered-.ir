@@ -17,8 +17,11 @@ jobs:
     - name: Initialize Git repository
       run: git init
 
-    - name: git add zip file to repository
-      run: [git add path/to/cybersecaws.yml.zip]
+    - name: git add .zip file to repository
+      run: -Add zip file [/path/path/to/cybersecaws.yml]
+      
+    - name: git extract .zip file path to a new configuration dev.envro file
+      run: -convert zip path file to a new dotenvro configuration pipeline 
 
     - name: Set up environment configuration
       run: cp devcert.yml path/to/env
@@ -31,7 +34,7 @@ jobs:
 
     - name: Merge branches
       run: 
-        git add .zip file [path/to/cybersecaws.yml.zip]
+        git add .zip file [path/to/cybersecaws.yml] zip file
         git checkout main
         git merge marcelmonde kenaimarcel
 
