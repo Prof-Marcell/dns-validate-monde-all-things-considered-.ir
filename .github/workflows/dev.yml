@@ -11,23 +11,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: AWS Pipeline
       uses: actions/checkout@v3
 
-    - name: Set up environment configuration
-      run: cp devcert.yml path/to/env
+    - name: Set up a new dotenviro file
+      run: blank.yml 
 
     - name: Build AWS CI pipeline
-      run: echo "Building AWS CI pipeline (add actual commands here)"
+      run: echo "CI pipeline (add actual commands here)"
 
-    - name: Link AWS CI to environment file
-      run: echo "Link to blank.CI pipeline to devcert.yml"
-
-    - name: Merge branches
-      run: zip file "[path/to/cybersecaws.yml.zip]" file
+    - name: Link AWS CI pipeline to .envr file
+      run: echo "blank.yml file as a new CI pipeline for blank.yml" file
 
     - name: Deploy environment 
-      run: echo "Deploying devcert.yml file using AWS pipeline (add actual commands here)"
+      run: echo "Deployment blank.yml environment )"
 
     - name: Force push changes
       run: git push origin main --force
