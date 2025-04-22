@@ -14,15 +14,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Initialize Git repository
-      run: git init
-
-    - name: git add .zip file to repository
-      run: -Add zip file [/path/path/to/cybersecaws.yml]
-      
-    - name: git extract .zip file path to a new configuration dev.envro file
-      run: -convert zip path file to a new dotenvro configuration pipeline 
-
     - name: Set up environment configuration
       run: cp devcert.yml path/to/env
 
@@ -30,13 +21,10 @@ jobs:
       run: echo "Building AWS CI pipeline (add actual commands here)"
 
     - name: Link AWS CI to environment file
-      run: echo "Linking AWS CI pipeline to devcert.yml (add actual commands here)"
+      run: echo "Link to blank.CI pipeline to devcert.yml"
 
     - name: Merge branches
-      run: 
-        git add .zip file [path/to/cybersecaws.yml] zip file
-        git checkout main
-        git merge marcelmonde kenaimarcel
+      run: zip file "[path/to/cybersecaws.yml.zip]" file
 
     - name: Deploy environment 
       run: echo "Deploying devcert.yml file using AWS pipeline (add actual commands here)"
