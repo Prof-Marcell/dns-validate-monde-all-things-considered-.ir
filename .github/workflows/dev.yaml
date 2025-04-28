@@ -1,8 +1,9 @@
     stage:
         -name: -a new "dev.envro" .yml file
-            set up: -a new PROPRE_CI_PIPELINE: 
+            set up: 
                 -name: "AWS_PIPELINE"
-            build: a .zip file [/path/way/.zip] to "AWS_PIPELINE" 
+            build: 
+            a .zip file [/path/way/.zip] to "AWS_PIPELINE" 
         run job(s):
     commit:
 -name:
