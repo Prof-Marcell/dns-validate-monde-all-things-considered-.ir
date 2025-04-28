@@ -1,30 +1,60 @@
-name: Deploy AWS Pipeline
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: AWS Pipeline
-      uses: actions/checkout@v3
-
-    - name: Set up a new dotenviro file
-      run: blank.yml 
-
-    - name: Build AWS CI pipeline
-      run: echo "CI pipeline (add actual commands here)"
-
-    - name: Link AWS CI pipeline to .envr file
-      run: echo "blank.yml file as a new CI pipeline for blank.yml" file
-
-    - name: Deploy environment 
-      run: echo "Deployment blank.yml environment )"
-
-    - name: Force push changes
-      run: git push origin main --force
+    stage:
+        -name: -a new "dev.envro" .yml file
+            set up: -a new PROPRE_CI_PIPELINE: 
+                -name: "AWS_PIPELINE"
+            build: a .zip file [/path/way/.zip] to "AWS_PIPELINE" 
+        run job(s):
+    commit:
+-name:
+    -branches:
+    "Main"
+    "Master"
+          merge:
+              -commmit: to -repo
+        branches:  
+    [Master]
+    [Main']
+  stage: a "dev.yml" file
+      -name:
+         "workflow_dispatch"
+           -run job(s):
+                 -deploy-runs: 
+          onto a seperate <<secs>> [edcm_hash_file] <</secs>> code string
+                   Exeucute-steps:
+               name: "PROPRE_AWS_CI_PIPELINE"
+          run job(s):  
+             #incrementally [(so as not to use case(s)]:# 
+    -action:
+input(s): 
+      -name: 
+  - "emitter_type .yml file" 
+          -command:  
+            -a new .yaml emulator:
+                  -name:
+        <<secs>> "[path/way/checkout@509x.v3.yaml]" file <</secs>>
+                set up: 
+             -a new "dotenviro" file
+        -name: 
+          - a "PROPRE_AWS_CI_PIPELINE.yml" file 
+    -Build: 
+     a basic "CI_PIPELINE"
+-name: 
+ -"PROPRE_CI_PIPELINE"
+        run job(s): echo "CI_PROPRE_AWS_CI_PIPELINE"
+                -Link: AWS_CI_pipeline to dotenvro file
+                    -echo: a basic "PROPRE_AWS_CI_PIPELIONE.yml" file:
+                -build: a new "CI_PIPELINE":
+              merge commit(s): -[PROPRE_CI_PIPELINE.yml],[CI_PIPELINE] to -repo
+        -name:
+         ".atc"
+  run jobs(s): echo Deployment:
+                -name:
+              -"PROPRE_CI_PIPELINE.yml" environment
+         push code: 
+    patch:
+          -name:
+            -updates:
+                -name:
+         "patch_#2"
+    run code: 
+      --force push
