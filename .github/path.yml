@@ -8,7 +8,7 @@
 6.    -name:
 7.  a new "PROPRE_CI,_PIPELINE.zip" file:
 8. run job(s):
-9  -name:
+9.  -name:
 10. as a new dotenvro emmiter file [/storage/emulated/0/Files by Google/Compressed files/cybersecaws.yml.zip]
 11. -name:
 12. "PROPRE_CI_PIPELINE"
