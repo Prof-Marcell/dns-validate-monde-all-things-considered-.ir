@@ -1,9 +1,8 @@
-1. 
-set up:
--a new .py dev.envro file:
--name:
-"main.py"
-link:
-"main.py" to repo 
-push code:
---force push
+1. set up:
+2. -a new .py dev.envro file:
+3  -name:
+4. "main.py"
+5. link:
+6."main.py" to repo 
+7.push code:
+8. --force push
