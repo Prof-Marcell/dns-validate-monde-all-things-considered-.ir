@@ -9,17 +9,21 @@
 7.   a new "PROPRE_CI,_PIPELINE.zip" file:
 8. run job(s):
 9.    -name:
-10.     as a new dotenvro emmiter file [/storage/emulated/0/Files by Google/Compressed files/cybersecaws.yml.zip]
-11.      -name:
-12.    "PROPRE_CI_PIPELINE"
-13.   run job(s):
-14. name:
-15.   -merge commit(s)
-16.     -name(s):
-17. ["kenaimarcel"],
-18. ["MarcelMonde"] to -repo
-19.   run job(s):
-20. name:
-21.   -deploy code to workflow:
-22.     push code: 
-23. --force push 
+10.    "PROPRE_CI_WORKFLOW": 
+12. deploy code: 
+13. -to anew dotenvro emmiter file /path/way.zip file:
+14. -name:
+  "/storage/emulated/0/Files by Google/Compressed files/cybersecaws.yml.zip"
+15.    link:
+16.      -name:
+17.    "PROPRE_CI_PIPELINE"
+18.   run job(s):
+17. name(s):
+18.   -merge:
+19.  commit to -repo:
+20.     -name(s):
+21. ["kenaimarcel"],
+22. ["MarcelMonde"] 
+23.     run job(s):
+24.   -push code: 
+25. --force push 
