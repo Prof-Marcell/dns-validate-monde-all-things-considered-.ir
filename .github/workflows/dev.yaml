@@ -1,6 +1,6 @@
     stage:
         -name: -a new "dev.envro" .yml file
-            set up: 
+            set up:
                 -name: "AWS_PIPELINE"
             build: 
             a .zip file [/path/way/.zip] to "AWS_PIPELINE" 
