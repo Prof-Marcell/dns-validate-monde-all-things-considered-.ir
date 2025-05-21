@@ -1,0 +1,42 @@
+$ curl -JLO get <https://github.com/provenance-io/provenance/releases/download/v1.8.1/provenance-darwin-amd64-v1.8.1.zip>
+$ unzip provenance-darwin-amd64-v1.8.1.zip
+$ export PATH=$(pwd)/bin:$PATH
+$ provenanced --testnet keys add my_test_key
+- name: MY_Pub_Key
+  type: local
+    address: pb16sdgawmvu43dr896v52vlmacfdadtsfgd5qezu
+      pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A7inUApSgRNEqAuXtjGnSPQMnvEBMJJ3m7GzjlztQHiG"}'
+        mnemonic:
+$ provenanced q bank balances pb16sdgawmvu43dr896v52vlmacfdadtsfgd5qezu\        
+--testnet \
+--node=https://rpc.test.provenance.io:443
+balances:
+- amount: "100000000000"
+  denom: nhash
+  pagination:
+    next_key: null
+      total: "10"
+      provenanced tx bank send pb16sdgawmvu43dr896v52vlmacfdadtsfgd5qezu SHA256:/z6OpAiG0UbwtVw/3G3lSTJ1DwcbvRPcyuEV4ahL1IU 1nhash \
+       --testnet \
+        --node=https://rpc.test.provenance.io:443 \
+         --chain-id=pio-testnet-1 \
+          --gas auto \
+           --gas-adjustment 1.2 \
+            --gas-prices 1905nhash \
+             --output json | jq .
+             gas estimate: 358060
+             {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address":9","to_address"pb16sdgawmvu43dr896v52vlmacfdadtsfgd5qezu":"tp1qgjnuqnrqwhg2kfl0dk9rhkcga5lehns2hdycm","amount":[{"denom":"nhash","amount":"1"}]}],"memo":"","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[],"fee":{"amount":[{"denom":"nhash","amount":"682104300"}],"gas_limit":"358060","payer":"","granter":""}},"signatures":[]}
+             confirm transaction before signing and broadcasting [y/N]: y
+             {
+               "height": "7557035",
+                 "txhash": "2392447592C4EB3EE02E913AC702F47238A78D15932BAB7DE7DDCFED3D6C70B5",
+                   "codespace": "",
+                     "code": 0,
+                       "data": "0A1E0A1C2F636F736D6F732E62616E6B2E763162657461312E4D736753656E64",
+                       ... snip ...
+                         "info": "",
+                           "gas_wanted": "358060",
+                             "gas_used": "309422",
+                               "tx": null,
+                                 "timestamp"
+                                 } 
