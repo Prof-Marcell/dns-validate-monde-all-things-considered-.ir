@@ -1,4 +1,4 @@
-stage:
+# stage: as series of steps:
 -name:
 set up:
 as a new:
@@ -35,9 +35,6 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-build-${{ env.cache-name }}-
           ${{ runner.os }}-build-
-          ${{ runner.os }}-
-
-    - name: Install dependencies
-      run:
-      deploy code
+          ${{ runner.os }}- #
+      deploy code:
       --force push code
