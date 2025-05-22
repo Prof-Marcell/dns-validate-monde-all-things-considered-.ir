@@ -38,6 +38,6 @@ jobs:
           ${{ runner.os }}-
 
     - name: Install dependencies
-      run: |
+      run:
       deploy code
       --force push code
