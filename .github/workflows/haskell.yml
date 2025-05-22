@@ -37,4 +37,3 @@ jobs:
           ${{ runner.os }}-build-
           ${{ runner.os }}- #
       deploy code:
-      --force push code
