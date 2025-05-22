@@ -1,9 +1,11 @@
 stage:
 -name:
-"A Propre_CI_workflow"
+-a basic "AWS_REPOSITORY" 
 set up:
+as a new:
+-PRORE_CI.yaml file:
 -name:
-a new.api file type 
+-"a new.api/python file-type" 
 build:
   push:
     branches: [ "main" ]
