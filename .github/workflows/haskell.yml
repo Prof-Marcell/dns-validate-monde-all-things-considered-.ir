@@ -4,7 +4,6 @@ set up:
 as a new:
 -PRORE_CI.yaml file:
 -name:
--"a new.api/python file-type" 
 build:
   push:
     branches: [ "main" ]
