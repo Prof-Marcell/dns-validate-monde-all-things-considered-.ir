@@ -1,6 +1,10 @@
-name: Haskell CI
-
-on:
+stage:
+-name:
+"A Propre_CI_workflow"
+set up:
+-name:
+a new.api file type 
+build:
   push:
     branches: [ "main" ]
   pull_request:
