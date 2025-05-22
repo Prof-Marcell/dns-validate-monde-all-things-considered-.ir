@@ -1,27 +1,29 @@
 steps:
-  - step: git init
+#
+  - # step: git init
     description: Initialize the Git repository.
 
-  - step: git add .pen file [pk-RSIOVF7VJ2UFL3HCNAJFLIMFQOW44JRVcert-RSIOVF7VJ2UFL3HCNAJFLIMFQOW44JRV (1).pem]
-  - step: -git add .cert file [cert-RSIOVF7VJ2UFL3HCNAJFLIMFQOW44JRV.pem]
-    description: -Add
-  - step: git setup devcert.yml
-    description: Set up the environment configuration file named devcert.yml.
+  - # step: git add .pem file [pk-RSIOVF7VJ2UFL3HCNAJFLIMFQOW44JRVcert-RSIOVF7VJ2UFL3HCNAJFLIMFQOW44JRV (1).pem]
+  - # step: -git add .cert file [cert-RSIOVF7VJ2UFL3HCNAJFLIMFQOW44JRV.pem]
+    # description: -Add
+  - # step: git setup devcert.yml
+    # description: Set up the environment configuration file named devcert.yml.
 
-  - step: git build aws-ci
-    description: Build the AWS CI pipeline.
+  - # step: git build aws-ci
+    # description: Build the AWS CI pipeline.
 
-  - step: git link aws-ci to devcert.yml
-    description: Link the AWS CI pipeline to the devcert.yml environment file.
+  - # step: git link aws-ci to devcert.yml
+    # description: Link the AWS CI pipeline to the devcert.yml environment file.
 
-  - step: git merge commits
-    branches: 
-      - marcelmonde
-      - kenaimarcel
-    description: Merge the specified branches into the repository.
+  - # step: git merge commits
+    # branches: 
+      # - marcelmonde
+     # - kenaimarcel
+    # description: Merge the specified branches into the repository.
 
-  - step: git deploy devcert.yml
-    description: Deploy the devcert.yml file using the AWS pipeline.
+  - # step: git deploy devcert.yml
+    # description: Deploy the devcert.yml file using the AWS pipeline.
 
-  - step: git push --force
-    description: Force push the changes to the remote repository.
+  - # step: git push --force
+    # description: Force push the changes to the remote repository. #
+#
