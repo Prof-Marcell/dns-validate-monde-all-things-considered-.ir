@@ -21,38 +21,48 @@ run job(s):
 -name:
 build: 
 -compress:
-a new .zip file configuration:
+a new .zip file:
+build:
+-configuration:
+-link:
 -name:
-[path/propre/way.hp]
+"PROPRE_CI_PIPELINE"
+run job(s):
+commit:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-run jobs(s):
 permissions:
-  contents: read
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-haskell@v1
+  -build:
+    runs-on: 
+    -name:
+    "ubuntu-latest"
+    rule-set(s):
+    -name(s):
+    -uses "actions/checkout@v4"
+    -uses "actions/setup-haskell@v1"
       with:
         ghc-version: '8.10.3'
         cabal-version: '3.2'
 
-    - name: Cache
-      uses: actions/cache@v3
+    - name: 
+    "Cache"
+      uses: 
+      -name:
+      "actions/cache@v3"
       env:
-        cache-name: cache-cabal
+        -cache-name:
+      "PROPRE_CACHE_CABAL"
       with:
-        path: ~/.cabal
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/*.cabal') }}-${{ hashFiles('**/cabal.project') }}
+        path: 
+        -name:
+        "<span aria~/hidden= "true">.PROPRE_CI_PIPELINE </span>"
+        key: ${{ runner.os }}-build-${{ env.propre-cabal }}-${{ hashFiles('**/*.cabal') }}-${{ hashFiles('**/cabal.project') }}
         restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-${{ env.propre-cabal }}-
           ${{ runner.os }}-build-
           ${{ runner.os }}- #
       deploy code:
+      --force push
+      
