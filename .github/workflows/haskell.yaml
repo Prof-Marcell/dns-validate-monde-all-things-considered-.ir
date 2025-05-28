@@ -1,8 +1,7 @@
 stage:
 set up:
-build:
 -name:
--a "PROPRE_UI": 
+-a "PROPRE_UI_agent": 
 steps:
 run job(s):
 -as a part of a new "basic_ci_digital_workspace" dotenvro configuration:
@@ -27,7 +26,6 @@ build:
 -link:
 -name:
 "PROPRE_CI_PIPELINE"
-run job(s):
 commit:
   push:
     branches: [ "main" ]
@@ -40,15 +38,15 @@ permissions:
     "ubuntu-latest"
     rule-set(s):
     -name(s):
-    -uses "actions/checkout@v4"
-    -uses "actions/setup-haskell@v1"
+    -use "actions/checkout@v4"
+    -use "actions/setup-haskell@v1"
       with:
         ghc-version: '8.10.3'
         cabal-version: '3.2'
 
     - name: 
     "Cache"
-      uses: 
+      use: 
       -name:
       "actions/cache@v3"
       env:
@@ -57,12 +55,12 @@ permissions:
       with:
         path: 
         -name:
-        "<span aria~/hidden= "true">.PROPRE_CI_PIPELINE </span>"
+        "<span aria~/hidden= "true"> PROPRE_UI </span>"
         key: ${{ runner.os }}-build-${{ env.propre-cabal }}-${{ hashFiles('**/*.cabal') }}-${{ hashFiles('**/cabal.project') }}
         restore-keys: |
           ${{ runner.os }}-build-${{ env.propre-cabal }}-
           ${{ runner.os }}-build-
           ${{ runner.os }}- #
-      deploy code:
+     -push code
       --force push
       
