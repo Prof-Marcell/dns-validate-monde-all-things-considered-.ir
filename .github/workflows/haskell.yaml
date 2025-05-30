@@ -5,10 +5,11 @@ build:
 -a "PROPRE_UI": 
 steps:
 run job(s):
--as a part of a new "basic_ci_digital_workspace" dotenvro configuration:
+-create:
 -name:
 "chain-link(s)":
--via some other cloaked proxy hp server:
+-name:
+-server:
 -command:
 -rule set(s):
 -upon breach of informtaion:
