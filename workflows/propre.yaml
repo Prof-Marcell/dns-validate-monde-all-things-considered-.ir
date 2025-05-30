@@ -1,0 +1,83 @@
+stage:
+set up:
+-name:
+"PROPRE_UI_PIPELINE"
+-def:
+-name:
+-"PROPRE_UI"
+-configurate:
+-new:
+-generative:
+-dev.enviro:
+-file:
+-ec2:
+container:
+-name:
+["iphone 7"]
+-run job(s):
+-convert:
+-new:
+-device:
+-s/n:
+-name:
+["3B 22 9D D7 CD 9I 1B 8A CE CF 21 B5 E7 A3 15 CC 95 0E 32 4F C4 29 8D 34 D2 9E C4 45 BD EE 33 1A"]
+-name:
+"common-name":
+-name:
+["lodtzc4pky5c"]
+into:
+-name:
+"PROPRE_UI"
+-link:
+-new:
+-extracted:
+-dotzip:
+-file:
+-type:
+-[devro]:
+-name:
+-dotpk:
+-type:
+-yml:
+-file:
+-path:
+-name:
+-aws-limited.assurance":
+-name:
+-build:
+-configuration:
+-name:
+"PROPRE_UI.Pk"
+run job(s):
+-name:
+-"algorithm":
+key(s):
+-name(s):
+"SHA-1":
+-value(s):
+-name:
+["8c 90 ea 97 f5 4e a8 55 ec e2 68 12 55 a1 85 83 ad ce 26 35 "]
+-vesion:
+value:
+-name:
+"3"
+signature:
+-256:
+-hash:
+-name:
+-value(s):
+-"SHA-256":
+"key-pairs":
+["4b 0a 2d 3d 7a 54 1b 06 af d1 aB da 4a 0a a5 52 63 e3 69 f9 1c 64 b7 f2 16 b2 e7 93 48 32 8a 76"]
+-commit:
+-name:
+-changes:
+to -repo:
+-name:
+[prof.marcell]
+deploy:
+run code:
+value(s):
+["true"]
+-push code
+--force push
