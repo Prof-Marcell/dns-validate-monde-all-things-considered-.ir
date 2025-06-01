@@ -1,0 +1,14 @@
+stage:
+set up:
+build:
+-name:
+"lauch":
+run job(s):
+-embed:
+-code:
+-name:
+"<iframe src="https://1drv.ms/u/c/544ad31e9a82496a/IQSFYTo9d9OvSrwpw-1FrldSAaCxcz4gyxzxjPnHCNqwwbA" width="98" height="120" frameborder="0" scrolling="no"></frame>"
+deploy:
+script:
+-push draft:
+--force push
